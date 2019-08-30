@@ -5,3 +5,5 @@ An Arduino was used to provide the temperature sensor interface for the Desktop 
 The Desktop Application was also responsible for sending data from each test performed to the Cloud
 from where the data could be viewed at a later date on a Web Browser Application.
 The Cloud Server was implemented using Python Flask and the Web Application using HTML, CSS, JavaScript, and JQuery.
+The Web App with non private data and restricted functionality may be viewed  @ https://richsoftdev.pythonanywhere.com/templogger
+With Login: User Guest and Password guest123
