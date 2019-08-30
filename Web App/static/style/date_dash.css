@@ -1,0 +1,98 @@
+#container-other-data{
+	min-height:400px;
+}
+
+.list{
+	margin-left:1px;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+li{
+  margin:2px;
+  font-size:10pt;
+}
+
+.unit {
+	display: inline;
+	display:table-row;
+	border-top:#aaaaaa solid 1px;
+
+}
+
+.listimg{
+    float: right;
+    margin-right: 30px;
+	color: white;
+}
+
+.unit span img {
+    background-color: white;
+    margin-right: 5px;
+	
+}
+
+.listtext{
+	color: #56BFD7;
+	margin-top:15px;
+
+}
+
+#blank{
+	border-top:#aaaaaa solid 1px;
+}
+
+#datepicker input{
+	color: white;
+	background-color: #5c5c5c;
+}
+
+/************ LOADING SPINNER **************/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}

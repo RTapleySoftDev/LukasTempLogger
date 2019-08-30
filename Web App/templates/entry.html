@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/login.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+  <title>Test Rig</title>
+  <style>
+
+</style>
+</head>
+
+<body>
+
+<div id ="screen" >
+	<div id = "title">
+		<div id = "img"> <img src="static/images/RelLogo30.png" alt="|" height="30px"><span id="titlespan"> Lukas Temperature Logger</span>
+			<div class="dropdown">
+				<button id="menuclick" class="dropbtn"></button>
+				  <div id="myDropdown" class="dropdown-content">
+					<a id = "logdata" state="off" href="#">Start Data Logging</a>
+					<a href="#">View Tank Data</a>
+					<a href="#">View Plate Data</a>
+					<a href="#">View Fridge Data</a>
+				  </div>
+			</div>
+		</div>
+	</div>
+	
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-3">
+          <h1>Login</h1>
+		      <div class="note">
+				{{message|safe}}
+			</div>
+          <form class="form" action="/processlogin" method="post">
+            <p class="form-group">
+              <input autocapitalize="off" autocorrect="off" class="form-control" id="id_auth-username" maxlength="100"
+              name="user" placeholder="Username" tabindex="1" type="text" autofocus/>
+            </p>
+            <p class="form-group">
+            <input class="form-control" id="id_auth-password" name="pass" placeholder="Password" tabindex="2"
+            type="password" /> 
+            <div class="clear"></div>
+            <style type="text/css" scoped="">
+    /* hide stupid updowney arrows on number input */
+    input[type=&quot;number&quot;]::-webkit-outer-spin-button,
+    input[type=&quot;number&quot;]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type=&quot;number&quot;] {
+      -moz-appearance: textfield;
+    }
+  
+</style>
+
+            <button id="id_next" type="submit" class="btn btn-primary">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

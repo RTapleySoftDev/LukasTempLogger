@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="{{ url_for('static', filename='script/jquery-3.3.1.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='script/Highcharts-6.0.4/code/highstock.src.js') }}"></script>
+   <script src="{{ url_for('static', filename='script/Highcharts-6.0.4/code/modules/exporting.src.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/Highcharts-6.0.4/code/modules/export-data.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/screenfull.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/lmain.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/dategraph.js') }}"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/date_dash.css') }}">
+
+
+  <title>Temperature Data</title>
+<style type="text/css">
+
+
+</style>
+</head>
+
+<body>
+<script>
+
+    $( document ).ready(function() {
+		//start();
+        fillChart();
+    });
+
+
+ </script>
+<div id="loader"></div>
+<div id ="screen" >
+	<div id = "title">
+		<div id = "img"> <img src="static/images/RelLogo30.png" alt="|" height="30px"> {{ the_name|safe }}
+			<div class="dropdown">
+				<span id = "scrview"><a id = "aScreenview" href = "#" title = "Or Press Hotkey F11"> Toggle Fullscreen</a></span>
+				<span id = "logout" ><a href = "/logout"> Log out</a></span>
+
+			</div>
+		</div>
+	</div>
+	<div class="custom-select" style="width:200px;">
+	<select id="selectFile" name = "selectFile" class="select-css"></select>
+	</div>
+	<div id = "container-data">
+		<div id = "container-graph" style = "color:white"></div>
+		<div id = "container-other-data">
+
+		<div class = "outer-flex">
+			<div class="list" >
+
+				 <ul>
+				 <li class = "unit" id = "blank"><span class = "listtext" > &nbsp </span> <span id = "" class= "listimg"><span class = "listtext"></span></span></li>
+				  <li class = "unit"><span class = "listtext" >Main Cooler &nbsp </span> <span id ="flow1" class= "listimg" > 0.0 <span class = "listtext">l/min</span></span></li>
+				  <li class = "unit"><span class = "listtext" >BC 2L Spare &nbsp </span> <span id = "flow2" class= "listimg" > 0.0 <span class = "listtext">l/min</span></span></li>
+				  <li class = "unit"><span class = "listtext" >Outer Plate &nbsp </span> <span id = "flow3" class= "listimg"> 0.0 <span class = "listtext">l/min</span></span></li>
+				  <li class = "unit"><span class = "listtext" >Inner plate &nbsp </span> <span id = "flow4" class= "listimg">0.0 <span class = "listtext">l/min</span></span></li>
+				  <li class = "unit" id = "blank"><span class = "listtext" > &nbsp </span> <span id = "" class= "listimg"><span class = "listtext"></span></span></li>
+				  <li class = "unit"><span class = "listtext" >Compressor &nbsp </span> <span id ="compOn" class= "listimg" > Off <span class = "listtext">  &nbsp &nbsp &nbsp &nbsp </span></span></li>
+				  <li class = "unit"><span class = "listtext" >Exchanger Pump &nbsp </span> <span id = "exPump" class= "listimg" > 0 <span class = "listtext">Watts</span></span></li>
+				  <li class = "unit"><span class = "listtext" >Manifold Pump &nbsp </span> <span id = "manPump" class= "listimg"> 0 <span class = "listtext">Watts</span></span></li>
+				  <li class = "unit"><span class = "listtext" >Total Load &nbsp </span> <span id = "totalWatts1" class= "listimg">0.0 <span class = "listtext">Watts</span></span></li>
+				  <li class = "unit" id = "blank"><span class = "listtext" > &nbsp </span> <span id = "" class= "listimg"><span class = "listtext"></span></span></li>
+				  <li class = "unit"><span class = "listtext" >Manifold Press &nbsp </span> <span id = "manPress" class= "listimg">0.0 <span class = "listtext">bar</span></span></li>
+				  <li class = "unit"><span class = "listtext" >Oven Temp &nbsp </span> <span id = "tankavrg" class= "listimg">0.0 <span class = "listtext">&deg;C</span></span></li>
+
+				</ul>
+			</div>
+
+		</div>
+
+
+
+
+		</div>
+	</div>
+	<div id = "container-date-opts">
+		<div id="datepicker">
+
+			<button id = "csvdownload" type="button">CSV Download</button>
+			<!--<button id = "moddownload" type="button">Create Model</button> -->
+		</div>
+		<div id = "checks">
+
+		</div>
+	</div>
+	<div id = "z" style = "color:white;">
+
+</div>
+
+
+</div>
+</body>
+</html>

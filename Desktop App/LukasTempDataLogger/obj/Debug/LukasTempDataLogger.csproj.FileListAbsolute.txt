@@ -1,0 +1,12 @@
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\bin\Debug\LukasTempDataLogger.exe.config
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\bin\Debug\LukasTempDataLogger.exe
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\bin\Debug\LukasTempDataLogger.pdb
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.Form1.resources
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.Properties.Resources.resources
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.csproj.GenerateResource.Cache
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.exe
+C:\Users\Developer\Source\Repos\LukasTempDataLogger\LukasTempDataLogger\obj\Debug\LukasTempDataLogger.pdb
